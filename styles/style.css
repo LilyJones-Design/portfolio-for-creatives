@@ -526,6 +526,7 @@ sup {
 .hero-headline {
   color: var(--color-accent-primary); /* Uses your brand's dominant color */
   max-width: 40ch; /* Optimal line length for readability (~40 characters) */
+  font-size: 13.5rem;
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
 }
