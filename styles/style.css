@@ -105,9 +105,9 @@
   --font-family-subheading: "Jetbrains Mono", sans-serif;
   /* Core Colours */
   --color-text-primary: #181c21;
-  --color-text-secondary: #83c6ef;
+  --color-text-secondary: #ffffff;
   --color-accent-primary: #181c21;
-  --color-accent-secondary: #1f557c;
+  --color-accent-secondary: #83c6ef;
   --color-overlay-primary: rgba(11, 70, 141, 0.5);
   --color-highlight: rgb(255, 187, 27);
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
