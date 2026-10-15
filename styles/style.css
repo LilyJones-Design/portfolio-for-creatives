@@ -144,7 +144,7 @@
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
-  --color-bg-sidebar-project: orangered;
+  --color-bg-sidebar-project: transparent;
   --color-bg-sidebar-work: lemonchiffon;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
   --color-gradient-project-details: linear-gradient(
@@ -156,7 +156,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #4d98c5;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -537,6 +537,7 @@ sup {
   font-family: var(--font-family-project-title);
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 /* Project description text — pairs with the project title */
@@ -725,6 +726,9 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
+  background: url(../assets/branding-images/hero-horse-galloping.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .hero-icon {
@@ -1039,6 +1043,9 @@ a.nav-link-primary:hover {
 }
 .footer-socials-list {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-tiny);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1185,9 +1192,6 @@ a.nav-link-primary:hover {
 .project-details {
   width: 100%;
   padding: var(--padding-small);
-  background: var(
-    --color-gradient-project-details
-  ); /* TODO: Remove gradient background if you prefer a simpler design */
 }
 
 /* Previous/Next Arrow Styles */
@@ -1530,9 +1534,7 @@ to keep your styles reusable and consistent.
   .project-aside {
     width: 35%;
     height: 80vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 8rem;
+
     padding-right: 2rem;
   }
 
@@ -1593,25 +1595,25 @@ to keep your styles reusable and consistent.
     padding-right: var(--padding-jumbo);
     padding-bottom: 0;
     padding-left: var(--padding-jumbo);
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Three equal columns */
   }
 
   /* Column 1: Tagline/Message */
   .footer-tagline {
-    grid-column: 1 / 2;
+    grid-column: 2/ 3;
     grid-row: 1 / 2;
   }
 
   /* Column 2: Awards & Works */
   .footer-highlights {
+    grid-column: 4 / 5;
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
   }
 
   /* Column 3: Contact & Social */
   .footer-contact-social {
+    grid-column: 5 / 6;
     grid-row: 1 / 2;
-    grid-column: 3 / 4;
   }
 
   /* ------------------------------- */
