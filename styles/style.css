@@ -117,19 +117,19 @@
   --color-bg-footer: #f5f5f5;
   --color-bg-holding-page: rgba(255, 255, 255, 0.6);
   /* Headings */
-  --h1-color: #83c6ef;
-  --h2-color: #4d98c5;
+  --h1-color: #010f17;
+  --h2-color: #010a10;
   --h3-color: #181c21;
   --h4-color: #181c21;
   --h5-color: #181c21;
   --h6-color: #181c21;
   /* Special Text Colours */
   --color-text-holding-title: #ffffff;
-  --color-text-project-category: #ffffff;
+  --color-text-project-category: #4d98c5;
   --color-text-project-description: #181c21;
   --color-text-project-sidebar: #181c21;
   --color-text-project-title: #181c21;
-  --color-text-work-grid-title: #ffffff;
+  --color-text-work-grid-title: #080707;
   /* Link States */
   --color-link: #4d98c5;
   --color-link-hover: #111;
@@ -461,11 +461,12 @@ h2 {
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1 rem;
-  font-family: var(--font-family-subheading);
+  font-family: var(--font-family-heading);
   margin-bottom: 1rem;
   line-height: 1.2;
   color: var(--h3-color);
@@ -479,14 +480,16 @@ h4 {
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 0.8 rem;
+  font-family: var(--font-family-subheading);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.6rem;
+  font-family: var(--font-family-subheading);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h6-color);
@@ -577,6 +580,8 @@ sup {
 /* 🏷️ Project category label — displays the type or role of the project */
 .work-grid-project-category {
   color: var(--color-text-project-category);
+  border: 2 px solid #4d98c5;
+  padding: 1ch;
 }
 
 /*
@@ -862,6 +867,7 @@ a.nav-link-primary:hover {
 .overlay-container {
   width: 100%;
   height: auto;
+  object-fit: cover;
   position: relative; /* Needed to position the overlay */
 }
 /* Masonry Overlay Text */
@@ -1046,6 +1052,8 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: row;
   gap: var(--gap-tiny);
+  height: 2rem;
+  object-fit: contain;
 }
 
 /* -------------------------------------------------------------------------- */
