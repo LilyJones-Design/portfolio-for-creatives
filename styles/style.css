@@ -483,7 +483,7 @@ h5 {
   font-size: 0.8 rem;
   font-family: var(--font-family-subheading);
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   color: var(--h5-color);
 }
 
@@ -580,8 +580,13 @@ sup {
 /* 🏷️ Project category label — displays the type or role of the project */
 .work-grid-project-category {
   color: var(--color-text-project-category);
-  border: 2 px solid #4d98c5;
-  padding: 1ch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.5rem;
+  border-color: #4d98c5;
+  border-width: 2px;
+  border-style: solid;
 }
 
 /*
@@ -731,9 +736,10 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
-  background: url(../assets/branding-images/hero-horse-galloping.gif);
+  background: url(../assets/branding-images/Horse-smaller.gif);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 50%;
 }
 
 .hero-icon {
@@ -1336,6 +1342,9 @@ a.nav-link-primary:hover {
 
 .error-page-animation {
   width: 25rem;
+  background: url(../assets/branding-images/hero-horse-galloping.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /*
