@@ -105,7 +105,7 @@
   --font-family-subheading: "Jetbrains Mono", sans-serif;
   /* Core Colours */
   --color-text-primary: #181c21;
-  --color-text-secondary: #ffffff;
+  --color-text-secondary: #000000;
   --color-accent-primary: #83c6ef;
   --color-accent-secondary: #4d98c5;
   --color-overlay-primary: rgba(11, 70, 141, 0.5);
@@ -485,6 +485,7 @@ h5 {
   line-height: 1.2;
   margin-top: 0.5rem;
   color: var(--h5-color);
+  margin-bottom: 0.25rem;
 }
 
 h6 {
@@ -1013,10 +1014,12 @@ a.nav-link-primary:hover {
 .footer-global {
   display: grid;
   grid-template-columns: 1fr; /* Single column layout */
-  grid-gap: 3rem; /* Consistent spacing between sections */
+  grid-gap: 1rem; /* Consistent spacing between sections */
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
+  text-align: center;
+  padding-top: var(--padding-large);
 
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
@@ -1049,6 +1052,10 @@ a.nav-link-primary:hover {
   align-self: end; /* Push to bottom */
 }
 
+.footer-logo {
+  width: 70%;
+}
+
 /* ------------------------------- */
 /* 📜 Reusable footer list styles */
 /* ------------------------------- */
@@ -1066,8 +1073,7 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: row;
   gap: var(--gap-tiny);
-  height: 2rem;
-  object-fit: contain;
+  justify-content: center;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1078,6 +1084,7 @@ a.nav-link-primary:hover {
 .footer-item {
   line-height: 1.2; /* Consistent line height for footer items to improve spacing */
   margin-bottom: 0.25rem;
+  font-size: 2rem;
 }
 
 /* ------------------------------- */
@@ -1619,6 +1626,7 @@ to keep your styles reusable and consistent.
   .footer-global {
     padding-top: var(--padding-jumbo);
     padding-right: var(--padding-jumbo);
+    grid-gap: 3rem; /* Consistent spacing between sections */
     padding-bottom: 0;
     padding-left: var(--padding-jumbo);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Three equal columns */
@@ -1642,12 +1650,16 @@ to keep your styles reusable and consistent.
     grid-row: 1 / 2;
   }
 
+  .footer-logo {
+    width: 100%;
+  }
+
   /* ------------------------------- */
   /* 📏 FULL-WIDTH BOTTOM SECTION */
   /* ------------------------------- */
   .footer-full-width {
     grid-row: 2 / 3;
-    grid-column: 1 / 4; /* Spans all three columns */
+    grid-column: 1 / 6; /* Spans all three columns */
     text-align: center;
     align-self: end; /* Aligns content to bottom */
   }
