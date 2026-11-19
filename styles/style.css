@@ -535,6 +535,14 @@ sup {
   margin-inline: auto; /* Horizontally centers the text in its container */
 }
 
+.hero-headline-shorter {
+  color: var(--color-text-primary);
+  max-width: 30ch;
+  font-size: 9vw;
+  text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
+  margin-inline: auto; /* Horizontally centers the text in its container */
+}
+
 /* Large project title — appears on individual project pages */
 .project-title {
   font-size: 3.625rem;
@@ -761,6 +769,32 @@ a.nav-link-primary:hover {
   padding: var(--padding-small);
 }
 
+.hero-shorter {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-headline-wrapper-shorter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-small);
+  text-align: center; /* Keeps text centered */
+  /* background: url(../assets/branding-images/Horse-smaller.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%; */
+}
+
+.hero-headline-shorter {
+}
+
 /*
 
  ██████  ██████  ███    ███ ██████   ██████  ███    ██ ███████ ███    ██ ████████ ███████ 
@@ -979,7 +1013,7 @@ a.nav-link-primary:hover {
   display: grid; /* Set to grid layout */
   grid-template-columns: 1fr; /* Single column layout for mobile and smaller screens */
   grid-gap: 3rem; /* Space between grid items */
-  background: var(--color-bg-about); /* Background color for the section */
+  background: var(--color-bg); /* Background color for the section */
   padding: var(--padding-small); /* Padding around the grid */
   flex: 1; /* Flex-grow to take up available space */
 }
@@ -994,6 +1028,11 @@ a.nav-link-primary:hover {
 .about-grid-text {
   grid-column: 1 / 2; /* Text spans the first column */
   grid-row: 2 / 3; /* Text spans the second row */
+}
+
+.about-text-bio {
+  max-width: 40ch;
+  font-size: 1.3rem;
 }
 
 /* 
